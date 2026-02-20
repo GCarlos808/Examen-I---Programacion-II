@@ -1,11 +1,13 @@
 package exameni_labprogii;
 import java.util.Calendar;
 import java.util.ArrayList;
+import javax.swing.ImageIcon;
 public class Game extends RentItem implements MenuActions{
     
     private Calendar fechaPublicacion;
     private ArrayList<String> especificaciones;
     private final double precioRenta=20;
+    public ImageIcon imagen;
     
     public Game(String codigo, String nombre, double precioBase) {
         super(codigo, nombre, precioBase);
@@ -39,4 +41,30 @@ public class Game extends RentItem implements MenuActions{
         System.out.println(especificaciones.get(contador));
         listEspecificaciones(contador+1);
     }
+    
+    @Override
+    public void submenu() {
+        
+    }
+    
+    @Override
+    public void ejecutarOpcion(int opcion) {
+
+        switch (opcion) {
+            case 1:
+                //setFechaPublicacion()
+                break;
+            case 2:
+                //agregarEspecificacion()
+                break;
+            case 3:
+                //getEspecificacionesComoTexto()
+                break;
+        }
+    }
+    
+    public ImageIcon getImagen() {
+        return imagen;
+    }   
+    
 }
