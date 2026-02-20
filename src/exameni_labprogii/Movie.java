@@ -3,7 +3,6 @@
     import java.util.Calendar;
     import java.util.Date;
     import javax.swing.ImageIcon;
-    import com.toedter.calendar.JDateChooser;
 
     public class Movie extends RentItem {
 
@@ -27,7 +26,7 @@
             this.fechaEstreno.set(year, mes - 1, dia);
         }
 
-
+     
         public void setFechaEstrenoDesdeDate(Date fecha) {
             if (fecha != null) {
                 this.fechaEstreno.setTime(fecha);

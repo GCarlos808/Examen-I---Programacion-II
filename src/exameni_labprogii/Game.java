@@ -1,11 +1,9 @@
-    package exameni_labprogii;
+package exameni_labprogii;
 
     import java.util.Calendar;
     import java.util.Date;
     import java.util.ArrayList;
-    import javax.swing.ImageIcon;
     import javax.swing.JOptionPane;
-    import com.toedter.calendar.JDateChooser;
 
     public class Game extends RentItem implements MenuActions {
 
@@ -24,10 +22,10 @@
             return dias * precioRenta;
         }
 
+
         public void setFechaPublicacion(int year, int mes, int dia) {
             fechaPublicacion.set(year, mes - 1, dia);
         }
-
 
         public void setFechaPublicacionDesdeDate(Date fecha) {
             if (fecha != null) {
@@ -57,6 +55,7 @@
             listEspecificaciones(contador + 1);
         }
 
+
         @Override
         public String toString() {
             return super.toString()
@@ -66,7 +65,6 @@
                     + fechaPublicacion.get(Calendar.YEAR)
                     + " - PS3 Game";
         }
-
 
         @Override
         public void submenu() { }
