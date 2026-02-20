@@ -1,6 +1,9 @@
 package exameni_labprogii;
 
 import javax.swing.ImageIcon;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.awt.Graphics2D;
 
 public abstract class RentItem {
 
@@ -31,7 +34,18 @@ public abstract class RentItem {
     }
 
     public void setImagePath(String path) {
-        this.imagenItem = new ImageIcon(path);
+        ImageIcon original = new ImageIcon(path);
+        int maxSize = 500; 
+
+        int w = original.getIconWidth();
+        int h = original.getIconHeight();
+
+        double scale = Math.min((double) maxSize / w, (double) maxSize / h);
+        int newW = (int) (w * scale);
+        int newH = (int) (h * scale);
+
+        Image scaled = original.getImage().getScaledInstance(newW, newH, Image.SCALE_SMOOTH);
+        this.imagenItem = new ImageIcon(scaled);
     }
 
     public String getCodigo()      { return codigo; }
