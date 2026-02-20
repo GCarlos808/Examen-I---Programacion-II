@@ -1,5 +1,7 @@
 package exameni_labprogii;
 import javax.swing.ImageIcon;
+import com.toedter.calendar.JDateChooser;
+
 public abstract class RentItem {
     protected String codigo, nombre;
     protected double precioBase;

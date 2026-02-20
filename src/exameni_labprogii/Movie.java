@@ -1,6 +1,8 @@
 
     package exameni_labprogii;
     import java.util.Calendar;
+    import com.toedter.calendar.JDateChooser;
+import javax.swing.ImageIcon;
 
     public class Movie extends RentItem {
         private Calendar fechaEstreno;
@@ -50,6 +52,10 @@
         public String toString() {
             return super.toString() + " | Estado " + getEstado() + " - Movie";
         }
+
+    void setImagenItem(ImageIcon imageIcon) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
         
         }
  
