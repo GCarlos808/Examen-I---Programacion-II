@@ -32,5 +32,7 @@ public abstract class RentItem {
         return precioBase;
     }
     
-    
+    public ImageIcon getImagen(){
+        return imagenItem;
+    }
 }
