@@ -1,8 +1,9 @@
 package exameni_labprogii;
+
 import javax.swing.ImageIcon;
-import com.toedter.calendar.JDateChooser;
 
 public abstract class RentItem {
+
     protected String codigo, nombre;
     protected double precioBase;
     protected int copiasDisp;
@@ -12,33 +13,29 @@ public abstract class RentItem {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precioBase = precioBase;
-        this.copiasDisp=0;
+        this.copiasDisp = 0;
     }
-    
+
     @Override
-    public String toString(){
-        return "Codigo: "+codigo+"\nNombre del item: "+nombre+"\nPrecio base: "+precioBase+"\nCantidad de copias: "+copiasDisp;
+    public String toString() {
+        return "Codigo: " + codigo
+                + "\nNombre del item: " + nombre
+                + "\nPrecio base: " + precioBase
+                + "\nCantidad de copias: " + copiasDisp;
     }
-    
+
     abstract double pagoRenta(int dias);
-    
-    public void setCopies(int copias){
-        this.copiasDisp=copias;
+
+    public void setCopies(int copias) {
+        this.copiasDisp = copias;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public void setImagePath(String path) {
+        this.imagenItem = new ImageIcon(path);
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public double getPrecioBase() {
-        return precioBase;
-    }
-    
-    public ImageIcon getImagen(){
-        return imagenItem;
-    }
+    public String getCodigo()      { return codigo; }
+    public String getNombre()      { return nombre; }
+    public double getPrecioBase()  { return precioBase; }
+    public ImageIcon getImagen()   { return imagenItem; }
 }
