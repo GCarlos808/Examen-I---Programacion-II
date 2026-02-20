@@ -18,7 +18,7 @@ public class ExamenI_LabProgII {
     public static void Rentar() {
         RentItem itemIngresado = null;
         int dias;
-        String codigo = JOptionPane.showInputDialog("Ingrese el codigo del item");
+        String codigo = JOptionPane.showInputDialog("Ingrese el codigo del item ");
         
         if (codigo == null || codigo.trim().isEmpty()) {
             return;
