@@ -7,7 +7,6 @@ public class Game extends RentItem implements MenuActions{
     private Calendar fechaPublicacion;
     private ArrayList<String> especificaciones;
     private final double precioRenta=20;
-    public ImageIcon imagen;
     
     public Game(String codigo, String nombre, double precioBase) {
         super(codigo, nombre, precioBase);
@@ -65,10 +64,6 @@ public class Game extends RentItem implements MenuActions{
                 //listEspecificaciones()
                 break;
         }
-    }
-    
-    public ImageIcon getImagen() {
-        return imagen;
-    }   
+    } 
     
 }

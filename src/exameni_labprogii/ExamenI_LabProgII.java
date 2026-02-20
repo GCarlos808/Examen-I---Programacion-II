@@ -16,7 +16,7 @@ public class ExamenI_LabProgII {
             return;
         }
         
-        JOptionPane.showMessageDialog(null, "", JOptionPane.INFORMATION_MESSAGE, itemIngresado.g);
+        JOptionPane.showMessageDialog(null, "", JOptionPane.INFORMATION_MESSAGE, itemIngresad);
     }
     
     
