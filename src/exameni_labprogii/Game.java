@@ -3,6 +3,9 @@ import java.util.Calendar;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import com.toedter.calendar.JDateChooser;
+
+
 public class Game extends RentItem implements MenuActions{
     
     private Calendar fechaPublicacion;
@@ -68,5 +71,9 @@ public class Game extends RentItem implements MenuActions{
                 break;
         }
     } 
+
+    void setImagenItem(ImageIcon imageIcon) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
