@@ -42,6 +42,10 @@ public class Game extends RentItem implements MenuActions{
         listEspecificaciones(contador+1);
     }
     
+    public void agregarEspecificacion(String especificacion){
+        especificaciones.add(especificacion);
+    }
+    
     @Override
     public void submenu() {
         
@@ -58,7 +62,7 @@ public class Game extends RentItem implements MenuActions{
                 //agregarEspecificacion()
                 break;
             case 3:
-                //getEspecificacionesComoTexto()
+                //listEspecificaciones()
                 break;
         }
     }
