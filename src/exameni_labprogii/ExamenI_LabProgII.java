@@ -10,10 +10,7 @@ public class ExamenI_LabProgII {
     public static void main(String[] args) {
         
     }
-    
-    
-    
-    
+
     
     public static void Rentar() {
         RentItem itemIngresado = null;
@@ -47,31 +44,6 @@ public class ExamenI_LabProgII {
         }
         
         JOptionPane.showMessageDialog(null, "Total a pagar: Lps. " + itemIngresado.pagoRenta(dias));
-    }
-    
-    private static void ejecutarSubMenu() {
-        String codigo = JOptionPane.showInputDialog(null, "Ingrese el código del ítem:", 
-            "Ejecutar Submenú", JOptionPane.QUESTION_MESSAGE);
-        
-        if (codigo == null || codigo.trim().isEmpty()) {
-            return;
-        }
-        
-        RentItem item = buscarItem(codigo);
-        
-        if (item == null) {
-            JOptionPane.showMessageDialog(null, "Item No Existe", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        
-        if (!(item instanceof MenuActions)) {
-            JOptionPane.showMessageDialog(null, "Este ítem no tiene submenú disponible.\n" +
-                "Solo los Games tienen submenú.", "Información", JOptionPane.INFORMATION_MESSAGE);
-            return;
-        }
-        
-        Game game = (Game) item;
-        mostrarSubmenuGame(game);
     }
     
     private static void mostrarSubmenuGame(Game game) {
@@ -221,4 +193,3 @@ public class ExamenI_LabProgII {
         }
         return null;
     }
-}
