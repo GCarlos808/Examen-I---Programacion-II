@@ -2,6 +2,7 @@ package exameni_labprogii;
 import java.util.Calendar;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 public class Game extends RentItem implements MenuActions{
     
     private Calendar fechaPublicacion;
@@ -33,11 +34,13 @@ public class Game extends RentItem implements MenuActions{
     }
     
     private void listEspecificaciones(int contador){
-        if(especificaciones.isEmpty())
+        if(especificaciones.isEmpty()){
+            JOptionPane.showMessageDialog(null, "No hay especificaciones");
             return;
+        }
         if(especificaciones.size()<=contador)
             return;
-        System.out.println(especificaciones.get(contador));
+        JOptionPane.showMessageDialog(null, especificaciones.get(contador));
         listEspecificaciones(contador+1);
     }
     

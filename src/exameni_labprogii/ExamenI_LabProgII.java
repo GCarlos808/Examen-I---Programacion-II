@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class ExamenI_LabProgII {
-    public void Rentar(){
+    public static void Rentar(){
         RentItem itemIngresado=null;
         int dias;
         String codigo=JOptionPane.showInputDialog("Ingrese el codigo del item");
@@ -40,7 +40,7 @@ public class ExamenI_LabProgII {
 
 
     public static void main(String[] args) {
-
+        
     }
     
     private static void ejecutarSubMenu() {
