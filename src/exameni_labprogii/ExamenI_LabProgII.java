@@ -11,10 +11,6 @@ public class ExamenI_LabProgII {
         
     }
     
-    
-    
-    
-    
     public static void Rentar() {
         RentItem itemIngresado = null;
         int dias;
@@ -32,7 +28,7 @@ public class ExamenI_LabProgII {
         }
         
         JOptionPane.showMessageDialog(null, itemIngresado.toString(), "Información del Ítem", 
-            JOptionPane.INFORMATION_MESSAGE, itemIngresado.getImagenItem());
+            JOptionPane.INFORMATION_MESSAGE, itemIngresado.getImagen());
         
         try {
             dias = Integer.parseInt(JOptionPane.showInputDialog("Ingrese cantidad de dias"));
