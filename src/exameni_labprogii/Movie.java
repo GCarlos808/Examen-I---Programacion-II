@@ -7,7 +7,7 @@
         
                 public Movie(String codigo, String nombre, double precioBase) {
             super (codigo, nombre, precioBase);
-            this.fechaEstreno=fechaEstreno;
+            this.fechaEstreno = Calendar.getInstance();
         }
                 
         public Calendar getFechaEstreno() {
