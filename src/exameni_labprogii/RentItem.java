@@ -21,6 +21,10 @@ public abstract class RentItem {
     }
     
     abstract double pagoRenta(int dias);
+    
+    public void setCopies(int copias){
+        this.copiasDisp=copias;
+    }
 
     public String getCodigo() {
         return codigo;
