@@ -108,7 +108,6 @@ public class ExamenI_LabProgII {
             nuevo.setCopies(Math.max(0, c));
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(frame, "Cantidad inválida. Se deja en 0.");
-            nuevo.copiasDisp(0);
         }
         
         items.add(nuevo);
