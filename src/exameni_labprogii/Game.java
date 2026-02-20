@@ -64,11 +64,15 @@ public class Game extends RentItem implements MenuActions{
                 //setFechaPublicacion()
                 break;
             case 2:
-                //agregarEspecificacion()
+                String especificacion=JOptionPane.showInputDialog("Ingrese especificacion: ");
+                agregarEspecificacion(especificacion);
+                JOptionPane.showMessageDialog(null, "La especificacion se agrego de forma exitosa");
                 break;
             case 3:
-                //listEspecificaciones()
+                listEspecificaciones();
                 break;
+            default:
+                JOptionPane.showMessageDialog(null, "Opcion invalida");
         }
     } 
 
