@@ -33,7 +33,7 @@
         @Override
         public double pagoRenta(int dias) {
             double total = precioBase;
-            if (getEstado().equals("Estreno")) {
+            if (getEstado().equals("ESTRENO")) {
                 if (dias > 2) {
                     total += (dias - 2) * 50;
                 }
