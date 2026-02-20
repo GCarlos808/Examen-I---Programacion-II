@@ -1,5 +1,4 @@
 package exameni_labprogii;
-import java.util.Calendar;
 import javax.swing.ImageIcon;
 public abstract class RentItem {
     protected String codigo, nombre;
