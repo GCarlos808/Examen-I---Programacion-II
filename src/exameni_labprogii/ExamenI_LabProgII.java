@@ -27,7 +27,7 @@ public class ExamenI_LabProgII {
                 return;
             }
         }catch(Exception e){
-            JOptionPane.showMessageDialog(null, "El valor ingresado es invalido");
+            JOptionPane.showMessageDialog(null, "El valor ingresado es invalido ");
             return;
         }
         
